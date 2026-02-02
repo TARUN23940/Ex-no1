@@ -67,7 +67,7 @@ END
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
-![Uploading Screenshot 2026-02-02 105103.png…]()
+~~~![Uploading Screenshot 2026-02-02 105103.png…]()~~~
 
 
 ## 2. SUBTRACTION
