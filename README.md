@@ -190,16 +190,16 @@ END
 
 ```asm
 CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
+ASSUME CS:CODE,DS:CODE
 ORG 1000H
-MOV SI,2000H
-MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOU DX,000OH
+MOU AX, 1234H
+MOU BX, 1234H
 DIV BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
-MOV AH,4CH
+MOU SI, 1200H
+MOV[SI],AX
+MOU [SI+02H],DX
+MOU AH, 4CH
 INT 21H
 CODE ENDS
 END
@@ -209,8 +209,8 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|              1200         |           10               |
+|          1201            |              11            |
 #### Manual Calculations
 
 (Add your calculation here)
@@ -218,6 +218,7 @@ END
 ---
 ## OUTPUT FROM MASM SOFTWARE
 
+<img width="635" height="428" alt="image" src="https://github.com/user-attachments/assets/c71f5358-84f8-4812-a331-899aab583a3e" />
 
 
 ## RESULT
