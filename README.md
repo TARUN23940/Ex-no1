@@ -39,7 +39,7 @@ ASSUME CS:CODE, DS:CODE
 ORG 1000H
 MOV CL,00H
 MOV AX,1234H
-MOV BX,1234H
+MOV BX,124H
 ADD AX,BX
 JNC L1
 INC CL
@@ -56,8 +56,8 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|       1200🔢
-|                          |
+|       1200              |         58               |
+|       1201              |         13               |
 
 #### Manual Calculations
 
@@ -66,6 +66,9 @@ END
 ---
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+
+![Uploading Screenshot 2026-02-02 105103.png…]()
+
 
 ## 2. SUBTRACTION
 
