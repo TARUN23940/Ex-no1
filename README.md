@@ -90,16 +90,15 @@ END
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
-MOV SI,2000H
 MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOV AX,1234H
+MOV BX,124H
 SUB AX,BX
 JNC L1
 INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
+L1:MOV SI,1200H
+MOV [SI], AX
+MOV [SI+2], CL
 MOV AH,4CH
 INT 21H
 CODE ENDS
@@ -111,8 +110,8 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-
+|          1200           |            10            |
+|          1201           |            11            |
 #### Manual Calculations
 
 (Add your calculation here)
@@ -121,6 +120,9 @@ END
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+
+<img width="636" height="423" alt="Screenshot 2026-02-02 110750" src="https://github.com/user-attachments/assets/05da9c74-e339-4bb2-b16f-4b3ccfed0ee9" />
+
 
 ## 3. MULTIPLICATION
 
