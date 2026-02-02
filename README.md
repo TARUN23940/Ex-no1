@@ -162,8 +162,8 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
-|                         |                          |
+|            1200           |            10              |
+|             1201         |            11            |
 
 #### Manual Calculations
 
@@ -172,6 +172,7 @@ END
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="640" height="425" alt="image" src="https://github.com/user-attachments/assets/bb2b4a2c-bf20-43c6-a9b0-25f03f73c059" />
 
 ## 4. DIVISION
 
