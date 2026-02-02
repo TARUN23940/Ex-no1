@@ -67,7 +67,7 @@ END
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
-~~~![Uploading Screenshot 2026-02-02 105103.png…]()~~~
+<img width="649" height="429" alt="Screenshot 2026-02-02 105103" src="https://github.com/user-attachments/assets/e7382ee9-1645-44a4-a927-d7a95d468f19" />
 
 
 ## 2. SUBTRACTION
