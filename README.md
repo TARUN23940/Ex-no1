@@ -193,17 +193,19 @@ END
 
 ```asm
 CODE SEGMENT
-ASSUME CS:CODE,DS:CODE
+ASSUME CS: CODE, DS: CODE
 ORG 1000H
-MOU DX,000OH
-MOU AX, 1234H
-MOU BX, 1234H
-DIV BX
-MOU SI, 1200H
-MOV[SI],AX
-MOU [SI+02H],DX
-MOU AH, 4CH
-INT 21H
+    MOV CL, 00H        ; Clear CL (optional flag/remainder indicator)
+    MOV AX, 0084H     ; Dividend (low word)
+    MOV BX, 0004H     ; Divisor
+    MOV DX, 0000H     ; Clear DX before division
+    DIV BX             ; AX = AX / BX, DX = remainder
+L1:
+    MOV SI, 1200H
+    MOV [SI], AX       ; Store QUOTIENT at 1200H
+    MOV [SI+2], DX     ; Store REMAINDER at 1202H
+    MOV AH, 4CH
+    INT 21H
 CODE ENDS
 END
 ```
@@ -212,17 +214,17 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|              1200         |           01               |
+|              1200         |           21               |
 |          1201            |              00            |
 #### Manual Calculations
 
 (Add your calculation here)
 
-<img width="1024" height="1536" alt="manual calculation fg" src="https://github.com/user-attachments/assets/c2daad17-7148-4dc6-b290-c54ee746ffa8" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a719cc9b-8488-48f3-a0b4-b26619089e2e" />
 
 ## OUTPUT FROM MASM SOFTWARE
 
-<img width="635" height="428" alt="image" src="https://github.com/user-attachments/assets/c71f5358-84f8-4812-a331-899aab583a3e" />
+<img width="644" height="147" alt="image" src="https://github.com/user-attachments/assets/60af8d73-0fbd-47c0-8f95-ac2a2e229ca3" />
 
 
 ## RESULT
