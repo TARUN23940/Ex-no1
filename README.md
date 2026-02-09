@@ -212,8 +212,8 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|              1200         |           10               |
-|          1201            |              11            |
+|              1200         |           01               |
+|          1201            |              00            |
 #### Manual Calculations
 
 (Add your calculation here)
