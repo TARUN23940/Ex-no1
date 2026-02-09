@@ -116,7 +116,8 @@ END
 
 (Add your calculation here)
 
----
+<img width="1024" height="1024" alt="manual calculation o" src="https://github.com/user-attachments/assets/da8cc3e4-027d-4879-b55e-561ecc73353a" />
+
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
