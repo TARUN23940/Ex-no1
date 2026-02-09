@@ -63,7 +63,8 @@ END
 
 (Add your calculation here)
 
----
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/e4ac87e0-fd30-4aed-a637-2fb66fc8915b" />
+
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
