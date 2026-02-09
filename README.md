@@ -164,18 +164,19 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|            1200           |            10              |
-|             1201         |            11            |
-
+|            1200           |            90              |
+|             1201         |            5A            |
+|            1202          |              4B          |
+|          1203         |                 01          |
 #### Manual Calculations
 
 (Add your calculation here)
 
-<img width="1024" height="1024" alt="manual calculation f" src="https://github.com/user-attachments/assets/56829988-4f06-4a24-80da-314406dc817d" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/44e34711-7900-4cd1-a46e-7fb4756b8c7d" />
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
-<img width="640" height="425" alt="image" src="https://github.com/user-attachments/assets/bb2b4a2c-bf20-43c6-a9b0-25f03f73c059" />
+![WhatsApp Image 2026-02-09 at 11 42 46 AM](https://github.com/user-attachments/assets/4b59612d-d50f-4f86-ac6e-672b0949e8fc)
 
 ## 4. DIVISION
 
